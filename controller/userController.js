@@ -73,7 +73,7 @@ const loginUser =asyncHandler( async(req,res)=>{
 //router get /api/users/current
 // Access Private
 const currentUser =asyncHandler( async(req,res)=>{
-    res.status(400).json({message:"current user"})
+    res.json(req.user);
 });
 
 
